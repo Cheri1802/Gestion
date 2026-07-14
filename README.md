@@ -1,15 +1,19 @@
-========================================================================
 TP - Gestion des Notes avec AWT + JDBC
 Cours Java - ESCEP Niger
 Auteur : Khaled Idi Karanta Cherifatou
-========================================================================
+
+
 
 STRUCTURE DES FICHIERS
 -----------------------
 Personne.java                 -> Classe mere : nom, prenom
+
 Etudiant.java                 -> Sous-classe : matricule, classe, listeNotes
+
 Matiere.java                  -> Modele : code, libelle, coefficient, semestre
+
 Note.java                      -> Modele : note controle/examen (validee 0-20)
+
 CalculMoyenne.java             -> Interface : contrat calculerMoyenne()
 Evaluation.java                -> Classe abstraite : implements CalculMoyenne
 Releve_notes.java              -> Calculs : moyennes matiere/semestre/generale
