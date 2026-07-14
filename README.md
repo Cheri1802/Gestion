@@ -14,22 +14,36 @@ Matiere.java                  -> Modele : code, libelle, coefficient, semestre
 
 Note.java                      -> Modele : note controle/examen (validee 0-20)
 
-CalculMoyenne.java             -> Interface : contrat calculerMoyenne()
+CalculMoyenne.java             -> Interface : contrat 
+
+calculerMoyenne()
+
 Evaluation.java                -> Classe abstraite : implements CalculMoyenne
+
 Releve_notes.java              -> Calculs : moyennes matiere/semestre/generale
+
 Gestion_note.java              -> Gestionnaire (Singleton + DAO)
+
 ConnexionBD.java               -> Connexion MySQL (Singleton)
-EtudiantDAO.java                -> CRUD JDBC table etudiants
+
+EtudiantDAO.java                -> CRUD JDBC table étudiants
+
 MatiereDAO.java                 -> CRUD JDBC table matieres
+
 NoteDAO.java                    -> CRUD JDBC table notes (upsert)
+
 ApplicationGestionNotes.java    -> Fenetre principale (extends Frame)
+
 Application_gestion_note.java  -> Ancienne demo console (conservee)
 
 BASE DE DONNEES
 -----------------------
 Nom de la base : gestion_note_escep
+
 Tables : etudiants, matieres, notes
+
 Script de creation : gestion_note_escep.sql (a executer via phpMyAdmin
+
 ou mysql -u root -p < gestion_note_escep.sql)
 
 COMPILATION
